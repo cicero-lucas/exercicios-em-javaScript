@@ -1,0 +1,11 @@
+let input= require('fs').readFileSync("teste","utf-8");
+let valores=input.split("\n");
+let nome=valores.shift();
+let valor=valores.shift();
+let [s,v]=valor.split(" ");
+let salario_fixo=parseFloat(s);
+let vendas=parseFloat(v)
+let acrecimo=(vendas*15)/100
+let salario=salario_fixo+acrecimo
+console.log(`NOME = ${nome}`);
+console.log(`TOTAL = U$ ${salario.toFixed(2)}`);

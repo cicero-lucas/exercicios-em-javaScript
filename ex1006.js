@@ -1,0 +1,10 @@
+let input= require('fs').readFileSync("teste","utf-8");
+let valores=input.split("\n");
+let a=parseFloat(valores.shift());
+let b=parseFloat(valores.shift());
+let c=parseFloat(valores.shift());
+let p1=a*2;
+let p2=b*3;
+let p3=c*5;
+let media=(p1+p2+p3)/10;
+console.log(`MEDIA = ${media.toFixed(2)}`);
